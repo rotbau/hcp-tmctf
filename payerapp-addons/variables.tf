@@ -63,8 +63,3 @@ variable "kustomization_sync_interval" {
   description = "sync time for kustomization changes"
   type        = string
 }
-
-variable "kustomization_namespace" {
-  description = "namespace to create kustomization"
-  type        = string
-}
