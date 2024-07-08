@@ -17,7 +17,7 @@ resource "tanzu-mission-control_backup_schedule" "sample-full" {
 
     template {
       backup_ttl = "2592000s"
-      excluded_namespaces= var.excluded_namespaces[0]
+      excluded_namespaces= var.excluded_namespaces
       excluded_resources = []
 
       storage_location = var.storage_location
