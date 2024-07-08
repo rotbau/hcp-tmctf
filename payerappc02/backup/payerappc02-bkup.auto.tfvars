@@ -4,4 +4,4 @@ cluster_name = "payerappc02-tf"               // Cluster to schedule
 backup_job_name = "payerappc02-daily"
 backup_scope = "FULL_CLUSTER"
 storage_location = "bauerbo-azure-blob"
-excluded_namespaces = "kube-system,vmware-system-tmc"
+excluded_namespaces = ["kube-system","vmware-system-tmc"]
