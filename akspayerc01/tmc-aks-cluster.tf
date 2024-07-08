@@ -16,10 +16,10 @@ provider "tanzu-mission-control" {
 }
 
 resource "tanzu-mission-control_akscluster" "demo_AKS_cluster" {
-  credential_name = "azure-credential-name"
-  subscription_id = "azure-subscription-id"
-  resource_group  = "azure-resource-group"
-  name            = "azure-cluster-name"
+  credential_name = var.credential_name
+  subscription_id = var.azure_subscription_id
+  resource_group  = var.resource_group
+  name            = var.aks_clustername
   meta {
     description = "aks test cluster"
     labels      = { "key1" : "value1" }
