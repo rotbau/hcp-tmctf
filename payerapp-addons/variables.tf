@@ -1,3 +1,8 @@
+variable "vmw_cloud_api_token" {
+  description = "api token for auth"
+  type        = string
+}
+
 variable "git_repo_name" {
   description = "Name for CICD Gitrepo"
   type        = string
