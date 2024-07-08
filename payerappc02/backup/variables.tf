@@ -35,5 +35,5 @@ variable "storage_location" {
 
 variable "excluded_namespaces" {
   description = "Namespace to skip on backup"
-  type        = string
+  type        = list
 }
