@@ -22,9 +22,9 @@ resource "tanzu-mission-control_git_repository" "create_cluster_group_git_reposi
     git_implementation = "GO_GIT" # Default: GO_GIT
     ref {
       branch = var.git_branch
-      tag    = "testTag"
-      semver = "testSemver"
-      commit = "testCommit"
+#      tag    = "testTag"
+#      semver = "testSemver"
+#      commit = "testCommit"
     }
   }
 }
