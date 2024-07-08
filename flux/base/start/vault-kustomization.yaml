@@ -12,5 +12,5 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: tmc-flux-poc
+    name: payer-flux-repo
     namespace: tanzu-continuousdelivery-resources
