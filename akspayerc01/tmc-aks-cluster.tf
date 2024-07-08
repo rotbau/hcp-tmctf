@@ -3,10 +3,6 @@ terraform {
     path = "./terraform.tfstate"
   }
 }
-
-provider "tanzu-mission-control" {
-}
-
 resource "tanzu-mission-control_akscluster" "demo_AKS_cluster" {
   credential_name = var.credential_name
   subscription_id = var.azure_subscription_id
