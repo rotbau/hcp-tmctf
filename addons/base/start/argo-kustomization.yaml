@@ -9,5 +9,5 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: payer-flux-repo
+    name: flux-addons-repo
     namespace: tanzu-continuousdelivery-resources
