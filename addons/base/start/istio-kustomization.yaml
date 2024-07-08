@@ -8,7 +8,7 @@ spec:
     substitute:
       chart_version: 1.20.3
   interval: 1m0s
-  path: ./base/istio-helm
+  path: ./addons/base/istio-helm
   prune: true
   sourceRef:
     kind: GitRepository
