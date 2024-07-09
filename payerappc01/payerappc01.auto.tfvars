@@ -11,7 +11,7 @@ tkr_version = "v1.27.11+vmware.1-fips.1-tkg.2"           // Version of Tanzu Kub
 cluster_ntp = "time1.oc.vmware.com, time2.oc.vmware.com"
 cluster_storageclass = "vc01cl01-t0compute"
 cluster_storageclasses = "vc01cl01-t0compute"
-cluster_vm_class = "best-effort-small"
+cluster_vm_class = "best-effort-medium"
 cluster_trusted_ca1 = ""
 
 // Control Plane Configuration
