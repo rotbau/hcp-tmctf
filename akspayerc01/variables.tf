@@ -4,31 +4,31 @@ variable "vmw_cloud_api_token" {
 }
 
 variable "credential_name" {
-  description = "api token for auth"
+  description = "tmc aks credential name"
   type        = string
 }
 
 variable "azure_subscription_id" {
-  description = "api token for auth"
+  description = "azure subscription id"
   type        = string
 }
 
 variable "resource_group" {
-  description = "api token for auth"
+  description = "azure resource group for cluster"
   type        = string
 }
 
 variable "aks_clustername" {
-  description = "api token for auth"
+  description = "aks cluster name"
   type        = string
 }
 
 variable "location" {
-  description = "api token for auth"
+  description = "cluster location"
   type        = string
 }
 
 variable "k8s_version" {
-  description = "api token for auth"
+  description = "k8s version"
   type        = string
 }
