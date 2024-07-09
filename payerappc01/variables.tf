@@ -143,21 +143,6 @@ variable "backup_job_name" {
   type        = string
 }
 
-variable "management_cluster_name" {
-  description = "TKG management cluster name in TMC"
-  type        = string
-}
-
-variable "provisioner_name" {
-  description = "vSphere Namespace"
-  type        = string
-}
-
-variable "cluster_name" {
-  description = "Name of TKG cluster"
-  type        = string
-}
-
 variable "backup_scope" {
   description = "Cluster level"
   type        = string
