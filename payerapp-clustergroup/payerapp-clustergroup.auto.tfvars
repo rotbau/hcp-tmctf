@@ -1,8 +1,8 @@
 //Global
-cluster_group = "test-apps"
+cluster_group = "payer-apps"
 cluster_group_description = "payer application cluster group"
 cluster_group_labels = {
-    app = "test"
+    app = "payer"
     type = "customer-facing"
 }
 git_repo_name = "flux-addons-repo"
