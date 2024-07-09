@@ -3,7 +3,7 @@ cluster_group = "payer-apps"
 cluster_group_description = "payer application cluster group"
 cluster_group_labels = {
     app = "payer"
-    type = "customer-facing"
+    type = "application"
 }
 git_repo_name = "flux-addons-repo"
 git_repo_namespace = "tanzu-continuousdelivery-resources"
