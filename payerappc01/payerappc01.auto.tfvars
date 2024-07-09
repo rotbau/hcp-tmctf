@@ -33,7 +33,7 @@ nodepool1_os_arch = "amd64"
 nodepool1_label1_key = "test-worker-label"
 nodepool1_label1_value = "value"
 nodepool1_storageclass = "vc01cl01-t0compute"
-nodepool1_vm_class = "best-effort-medium"
+nodepool1_vm_class = "best-effort-large"
 
 // Backup Job Configuration
 
