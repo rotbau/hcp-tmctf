@@ -40,7 +40,6 @@ resource "tanzu-mission-control_enable_data_protection" "cgdemo" {
 
 # Create Tanzu Mission Control cluster group scope helm feature with attached set as default value.
 resource "tanzu-mission-control_helm_feature" "create_cg_helm_feature" {
-  depends_on = [ tanzu-mission-control_cluster_group.create_cluster_group ]
   scope {
     cluster_group {
       name = var.cluster_group # Required
