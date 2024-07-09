@@ -32,3 +32,13 @@ variable "k8s_version" {
   description = "k8s version"
   type        = string
 }
+
+variable "node_count" {
+  description = "node count"
+  type        = number
+}
+
+variable "vm_size" {
+  description = "az vm size"
+  type        = string
+}

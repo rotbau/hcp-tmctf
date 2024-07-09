@@ -23,9 +23,9 @@ resource "tanzu-mission-control_akscluster" "demo_AKS_cluster" {
     nodepool {
       name = "systemnp"
       spec {
-        count   = 1
+        count   = var.node_count
         mode    = "SYSTEM"
-        vm_size = "Standard_DS2_v2"
+        vm_size = var.vm_size
       }
     }
   }
