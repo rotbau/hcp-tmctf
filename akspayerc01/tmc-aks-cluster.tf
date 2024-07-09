@@ -14,8 +14,8 @@ resource "tanzu-mission-control_akscluster" "demo_AKS_cluster" {
   }
   spec {
     config {
-      location           = "eastus"
-      kubernetes_version = "1.25.11"
+      location           = var.location
+      kubernetes_version = var.k8s_version
       network_config {
         dns_prefix = "dns-tf-test"
       }
