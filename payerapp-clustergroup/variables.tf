@@ -17,11 +17,6 @@ variable "git_repo_namespace" {
   type        = string
 }
 
-variable "git_cluster_group" {
-  description = "TMC Clustergroup name for Git repo"
-  type        = string
-}
-
 variable "git_url" {
   description = "Git URL"
   type        = string
@@ -52,11 +47,6 @@ variable "kustomization_name" {
 
 variable "kustomization_namespace" {
   description = "namespace for kustomization object"
-  type        = string
-}
-
-variable "kustomization_clustergroup" {
-  description = "clustergroup to apply kustomization"
   type        = string
 }
 
