@@ -38,6 +38,15 @@ resource "tanzu-mission-control_enable_data_protection" "cgdemo" {
   }
 }
 
+# Create Tanzu Mission Control cluster group scope helm feature with attached set as default value.
+resource "tanzu-mission-control_helm_feature" "create_cg_helm_feature" {
+  scope {
+    cluster_group {
+      name = var.cluster_group # Required
+    }
+  }
+}
+
 # Create Tanzu Mission Control git repository with attached set as default value.
 
 resource "tanzu-mission-control_git_repository" "create_cluster_group_git_repository" {
