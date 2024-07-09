@@ -25,7 +25,7 @@ control_plane_os_arch = "amd64"
 
 nodepool1_name = "md-0"
 nodepool1_description = "np1"
-nodepool1_worker_replicas = "2"
+nodepool1_worker_replicas = "3"
 nodepool1_worker_class = "node-pool"
 nodepool1_os_name = "ubuntu"
 nodepool1_os_version = "22.04"
@@ -34,3 +34,10 @@ nodepool1_label1_key = "sample-worker-label"
 nodepool1_label1_value = "value"
 nodepool1_storageclass = "vc01cl01-t0compute"
 nodepool1_vm_class = "best-effort-medium"
+
+// Backup Job Configuration
+
+backup_job_name = "payerappc02-daily"
+backup_scope = "FULL_CLUSTER"
+storage_location = "bauerbo-azure-blob"
+excluded_namespaces = ["kube-system","vmware-system-tmc","default"]
